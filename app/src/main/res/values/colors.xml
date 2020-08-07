@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9A0B0B</color>
+    <color name="colorPrimaryDark">#772904</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="whiteColor">#E9E9E9</color>
+    <color name="active_dots">#ED5107</color>
+    <color name="inactive_dots">#9A0B0B</color>
+    <color name="black">#000</color>
+    <color name="grey">#cacaca</color>
+    <color name="slider_txt_color">#a48098</color>
+    <color name="orange" >#ee8f61</color>
+    <color name="blue" >#0888ed</color>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fragmrnt_login_img"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:src="@drawable/login_logo" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_login_txt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/fragmrnt_login_img"
+                android:layout_margin="16dp"
+                android:background="@drawable/login_round"
+                android:padding="8dp"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+android:paddingStart="3dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:hint="phone"
+                    android:inputType="phone"
+                    android:textColorHint="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_login_txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/fragment_login_txt_phone"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/login_round"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true"
+
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:paddingLeft="@dimen/dim_8"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/fragmrnt_login_remember_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_login_txt_password"
+                android:layout_margin="16dp"
+                android:text="Remember Me"
+                android:textColor="@color/whiteColor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:theme="@style/login_checkbox" />
+
+            <TextView
+                android:id="@+id/fragment_login_txt_forgetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_login_txt_password"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:text="Forget Password?"
+                android:textColor="@color/whiteColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/fragment_login_but_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_login_txt_forgetPassword"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/login_but"
+                android:text="login"
+                android:textColor="@color/colorPrimary" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/fragmrnt_login_but_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey"
+        android:text="No account yet? Create one"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary" />
+</RelativeLayout>

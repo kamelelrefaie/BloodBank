@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/login"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fragment_register_tv_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="@string/create"
+        android:textColor="@color/whiteColor"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_register_ti_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="13dp"
+
+                android:background="@drawable/login_round"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_account_box"
+                    android:hint="name"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/dim_8"
+                    android:textColorHint="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_register_ti_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/login_round"
+
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawableStart="@drawable/email_register"
+                    android:hint="email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/dim_8"
+                    android:textColorHint="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_register_ti_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="13dp"
+                android:background="@drawable/login_round"
+
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_register_tiet_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_cake"
+                    android:hint="birthday"
+                    android:inputType="date"
+                    android:paddingLeft="@dimen/dim_8"
+                    android:textColorHint="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_register_ll_spinner_bt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/login_round">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/register_fragemnt_blood_img"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/ic_water_drop" />
+
+                    <Spinner
+                        android:id="@+id/fragment_register_spinner_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:layout_toEndOf="@+id/register_fragemnt_blood_img"
+                        android:background="@null" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/ic_arrow_downward" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_register_ti_donationd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="13dp"
+
+                android:background="@drawable/login_round"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fragment_register_tiet_donationd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_cake"
+                    android:hint="donation date"
+                    android:inputType="date"
+                    android:paddingLeft="@dimen/dim_8"
+                    android:textColorHint="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_register_ll_spinner_gov"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/login_round">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/register_fragemnt_city_img"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/ic_home_red" />
+
+                    <Spinner
+                        android:id="@+id/fragment_register_spinner_gov"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toStartOf="@+id/register_frgament_arrow_gov_img"
+                        android:layout_toEndOf="@+id/register_fragemnt_city_img"
+                        android:background="@null" />
+
+                    <ImageView
+                        android:id="@+id/register_frgament_arrow_gov_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/ic_arrow_downward" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_register_ll_spinner_city"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+
+                android:background="@drawable/login_round">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/register_fragemnt_gov_img"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/ic_home_red" />
+
+                    <Spinner
+                        android:id="@+id/fragment_register_spinner_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:layout_toStartOf="@+id/register_frgament_arrow_city_img"
+                        android:layout_toEndOf="@id/register_fragemnt_gov_img"
+                        android:background="@null" />
+
+                    <ImageView
+                        android:id="@+id/register_frgament_arrow_city_img"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="8dp"
+                        android:src="@drawable/ic_arrow_downward" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_register_ti_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="13dp"
+                android:background="@drawable/login_round"
+
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawableStart="@drawable/phone_register"
+                    android:hint="phone"
+                    android:inputType="date"
+                    android:paddingLeft="@dimen/dim_8"
+                    android:textColorHint="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_register_ti_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/login_round"
+
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawableStart="@drawable/pass_register"
+                    android:hint="password"
+                    android:inputType="date"
+                    android:paddingLeft="@dimen/dim_8"
+                    android:textColorHint="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fragment_register_ti_confirma"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/login_round"
+
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawableStart="@drawable/pass_register"
+                    android:hint="confirm"
+                    android:inputType="date"
+                    android:paddingLeft="@dimen/dim_8"
+                    android:textColorHint="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/fragment_register_but_create"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_but"
+                android:text="create" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

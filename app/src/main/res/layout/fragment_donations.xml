@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/fragment_home_donations_spin_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8">
+
+        <LinearLayout
+            style="@style/text_input"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/fragment_home_donations_gov_spin"
+                    style="@style/text_input_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toStartOf="@id/home_donation_fragment_bt_arrow_img" />
+
+                <ImageView
+                    android:id="@+id/home_donation_fragment_bt_arrow_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_arrow_downward" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/text_input"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/fragment_home_donations_bloodtypes_spin"
+                    style="@style/text_input_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toStartOf="@+id/home_donation_fragment_gov_arrow_img" />
+
+                <ImageView
+                    android:id="@+id/home_donation_fragment_gov_arrow_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_arrow_downward" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/fragment_home_donations_btn_filter"
+            android:layout_width="@dimen/dim_40"
+            android:layout_height="@dimen/dim_40"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/ic_search" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_home_donations_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_home_donations_spin_ll"
+        android:layout_marginTop="16dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fragment_home_donations_fbtn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/whiteColor"
+        android:src="@drawable/ic_add_red"
+        app:borderWidth="0dp"
+
+        />
+</RelativeLayout>

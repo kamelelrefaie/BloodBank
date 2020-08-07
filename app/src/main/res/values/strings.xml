@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Blood Bank</string>
+    <string name="slider_text">لوريم ايبسوم هو نموذج افتراضي يوضع في
+        التصاميم لتعرض علي العميل ليتصور طريقه وضع
+        النصوص بالتصاميم سواء كانت تصاميم مطبوعه …
+بروشر او فلاير علي سبيل المثال... او نماذج مواثع</string>
+
+
+    <string name="create" >Create New Account</string>
+    <string name="please_select_gov_and_bloodtypes_you_want_to_be_notified_of_their_donation_via_notification">Please Select Gov and BloodTypes you want to be Notified of their donation via Notification</string>
+    <string name="GPSAlertDialogTitle" />
+    <string name="GPSAlertDialogMessage" />
+    <string name="action_settings" />
+    <string name="cancel" />
+</resources>
